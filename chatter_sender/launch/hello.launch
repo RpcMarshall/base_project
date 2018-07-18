@@ -1,0 +1,8 @@
+<launch>
+  <node 
+     pkg="mypkg"
+     type="hello"
+     name="hello_launcher"
+     ns="sim2"
+  />
+</launch>
