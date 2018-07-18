@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>chatter_sender</name>
+  <name>chatter_bro</name>
   <version>1.1.0</version>
-  <description>The chatter_sender package</description>
+  <description>The chatter_bro package</description>
   <maintainer email="lukas.bulwahn@oss.bmw-carit.de">Lukas Bulwahn</maintainer>
   <license>BSD</license>
 
