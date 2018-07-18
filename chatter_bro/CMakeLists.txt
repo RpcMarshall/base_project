@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(chatter_sender)
+project(chatter_bro)
 
 find_package(catkin REQUIRED COMPONENTS chatter_msgs roscpp)
 
