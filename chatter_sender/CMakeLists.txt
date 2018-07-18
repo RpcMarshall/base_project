@@ -8,12 +8,12 @@ catkin_package()
 include_directories(${catkin_INCLUDE_DIRS})
 
 add_executable(chatter_sender src/chatter_sender.cpp)
+add_executable(hello src/hello.cpp)
 
 add_dependencies(chatter_sender chatter_msgs_gencpp)
 
-target_link_libraries(chatter_sender
-   ${catkin_LIBRARIES}
-)
+target_link_libraries(chatter_sender ${catkin_LIBRARIES})
+target_link_libraries(hello ${catkin_LIBRARIES})
 
 if(CATKIN_ENABLE_TESTING)
   find_package(rostest)
