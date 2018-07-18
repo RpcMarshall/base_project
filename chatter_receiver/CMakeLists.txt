@@ -8,12 +8,12 @@ catkin_package()
 include_directories(${catkin_INCLUDE_DIRS})
 
 add_executable(chatter_receiver src/chatter_receiver_node.cpp src/Receiver.cpp)
+add_executable(hello src/hello.cpp)
 
 add_dependencies(chatter_receiver chatter_msgs_gencpp)
 
-target_link_libraries(chatter_receiver
-  ${catkin_LIBRARIES}
-)
+target_link_libraries(chatter_receiver ${catkin_LIBRARIES})
+target_link_libraries(hello ${catkin_LIBRARIES})
 
 install(DIRECTORY launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
