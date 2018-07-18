@@ -1,0 +1,8 @@
+<launch>
+  <node 
+     pkg="mypkg"
+     type="pubvel"
+     name="velocity_publisher"
+     ns="sim2"
+  />
+</launch>
